@@ -9,7 +9,10 @@ def exampl_view(request):
     #my_app/templates/my_app/example.html
 
 def variable_view(request):
-    my_var = {"first_name": "Julia", "last_name": "Narine"}
+    my_var = {"first_name": "Julia", "last_name": "Narine",
+               "some_list":[1,2,3], 
+               "some_dict": {"inside_key": "inside_value"},   
+    }
 #to pass this variable to be used in variable.html we pass the arg context
 #set it equal to the variable name. 
     return render(request, "my_app/variables.html", context=my_var)
