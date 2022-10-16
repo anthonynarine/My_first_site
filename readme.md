@@ -35,6 +35,18 @@ COMMENTING OUT THINGS IN Django.
      ~this will not show up in the browser. 
 
 
+Django Filters
+
+ are built in modifiers taht all to quickly apply a change to a 
+ variable on the template rather than on the python script. 
+
+    {{first_name |upper}} #the vertical bar | declares you will be 
+    usint a filter
+
+
+Django Tags - For loops
+
+
 
 
 
